@@ -9,6 +9,12 @@ data = {'Name' : ['Alice','Bob','charlie',],
 df = pd.DataFrame(data)
 
 
+#adding new row for versioon2
+
+new_row_loc = {'Name':'gf1', 'Age':20, 'city':'newyork'}
+df.loc[len(df.index)] = new_row_loc
+
+
 # ensures that data exists at root level
 #majes dirn for the csv file
 data_dir = 'data'
